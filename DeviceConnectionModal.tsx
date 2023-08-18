@@ -8,16 +8,15 @@ import {
   StyleSheet,
   TouchableOpacity,
 } from "react-native";
-import { Device } from "react-native-ble-plx";
 
 type DeviceModalListItemProps = {
-  item: ListRenderItemInfo<Device>;
-  connectToPeripheral: (device: Device) => void;
+  item: ListRenderItemInfo<any>;
+  connectToPeripheral: (device: any) => void;
   closeModal: () => void;
 };
 
 type DeviceModalProps = {
-  devices: Device[];
+  devices: any[];
   visible: boolean;
   connectToPeripheral: (device: Device) => void;
   closeModal: () => void;
